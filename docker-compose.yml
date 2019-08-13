@@ -1,0 +1,9 @@
+version: "3"
+services:
+  anaconda:
+    container_name: Anaconda3
+    build: .
+    volumes:
+      - ./notebooks:/opt/notebooks
+    ports:
+      - "8888:8888"
